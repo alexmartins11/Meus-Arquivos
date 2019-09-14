@@ -1,0 +1,6 @@
+CC = gcc
+CFLAGS = -Wall -lm -g
+
+%: %.C
+    $(CC) $@.c -o $@ $(CFLAGS)
+
